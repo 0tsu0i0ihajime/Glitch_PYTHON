@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 
 app.post("/data", (req, res) => {
   const qrCodeData = req.body.qr;
-  //console.log(`QRコードから読み込まれたデータ：${qrCodeData}`);
+  //console.log(`QRコードから読み込まれたデータ：${qrCodeData}`);//テスト用コード
   const validQRCodeData = "04afahfakjfvizovhsoigeewpUwr326";
   if (qrCodeData === validQRCodeData) {
     //const expires = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000); //1年間有効なCookieを設定
